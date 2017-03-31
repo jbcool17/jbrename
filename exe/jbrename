@@ -2,4 +2,23 @@
 
 require "jbrename"
 
-Jbrename.test
+cmd = ARGV[0].to_i
+path = ARGV[1]
+replace = ARGV[2]
+replace_with = ARGV[3]
+
+case cmd
+when 1
+ Jbrename.rename_one(path, replace, replace_with)
+when 2
+  Jbrename.rename_all(path, replace, replace_with)
+else
+  puts 'not sure what you\'re getting at yo'
+  puts 'INFO:------------------------------'
+  puts "Examples:"
+  puts "#1 - Rename One Level"
+  puts "jbrename 1 './TEST/*' '0' '_'"
+  puts "#2 - Rename All Levels Down"
+  puts "jbrename 2 './TEST/*' '0' '_'"
+  puts '-----------------------------------'
+end
