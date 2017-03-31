@@ -2,4 +2,4 @@
 
 require "jbrename"
 
-puts ARGV[0]
+Jbrename.test

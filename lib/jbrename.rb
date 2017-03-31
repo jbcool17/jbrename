@@ -1,7 +1,7 @@
 require "jbrename/version"
 
 module Jbrename
-  def test
+  def self.test
     puts "Hello World"
   end
 end
