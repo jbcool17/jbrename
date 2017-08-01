@@ -17,6 +17,9 @@ bundle exec jbrename 1 ./TEST ' ' _
 $ bundle exec jbrename 2 ./TEST ' ' _
 
 ```
+## Notes
+- create test mode.
+
 
 ## -----------------------------------------------------------------------------
 ## Bundle GEM Info
