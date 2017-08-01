@@ -1,5 +1,5 @@
 # Jbrename
-- gem used to rename file recursively
+- gem used to rename files recursively
 
 ```
 # Create test folders / file
