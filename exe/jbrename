@@ -2,11 +2,14 @@
 
 require "jbrename"
 
+# Setup Variables
 cmd = ARGV[0].to_i
 path = ARGV[1]
 replace = ARGV[2]
 replace_with = ARGV[3]
 
+
+# Menu
 case cmd
 when 1
  Jbrename.rename_one(path, replace, replace_with)
